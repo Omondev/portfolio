@@ -1,0 +1,253 @@
+
+
+/* 🟢 Banner bo'limi */
+.container {
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1440px;
+    margin:  0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+   padding: 20px 0;
+}
+
+/* 🔥 Banner-content */
+.banner-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.intro {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff00;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.name {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    animation: slideLeft 1s ease-in-out;
+}
+
+.role {
+    font-size: 24px;
+    color: #00ff00;
+    font-weight: bold;
+    animation: slideRight 1s ease-in-out;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #d3d3d3;
+}
+
+/* 🔘 Button lar */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cv-btn,
+.download-icon {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.cv-btn {
+    background: #00ff00;
+    color: black;
+    font-weight: bold;
+}
+
+.cv-btn:hover {
+    background: #00cc00;
+    transform: scale(1.05);
+}
+
+.download-icon {
+    background: transparent;
+    color: white;
+    border: 2px solid #00ff00;
+}
+
+.download-icon:hover {
+    background: #00ff00;
+    color: black;
+}
+
+/* 🟢 Social Icons */
+.follow-me {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00ff00;
+    transform: scale(1.2);
+}
+
+/* 🟢 Profil Kartochkasi */
+.profile-card {
+    flex: 0.4;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.5);
+    max-width: 280px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #00ff00;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profile-role {
+    color: #00ff00;
+    font-size: 16px;
+}
+
+/* 🟢 Contact Icons */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.icon-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 24px;
+    color: white;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    color: #00ff00;
+    transform: scale(1.2);
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00ff00;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    bottom: -35px;
+}
+
+/* 🟢 Responsiv dizayn */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .profile-card {
+        max-width: 100%;
+    }
+}
+
+/* 🟢 Animatsiyalar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
