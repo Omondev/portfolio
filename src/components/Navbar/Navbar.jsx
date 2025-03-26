@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="logo">OmonovDev</div>
                 <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-                    <li><a href="/home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="/project">Projects</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
