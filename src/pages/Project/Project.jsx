@@ -7,10 +7,13 @@ const projects = [
     { name: "Movies", url: "https://kinolarcom.vercel.app/" },
     { name: "Desert", url: "https://desert-livid.vercel.app/" },
     { name: "Pomdoro ToDo", url: "https://time-chi-nine.vercel.app/" },
+    { name: "Tic Tac Toe", url: "https://tic-tac-rose.vercel.app/" },
+    { name: "Game", url: "https://game-pink-nine.vercel.app/" },
     { name: "Income Expenses", url: "https://kirim-chqim.vercel.app/" },
     { name: "Ramadan PSI", url: "https://ramadan-psi.vercel.app" },
     { name: "Flags", url: "https://bayroqlar-zeta.vercel.app/" },
     { name: "Calculator", url: "https://calcc-phi.vercel.app/" }
+
 ];
 
 const Project = () => {
